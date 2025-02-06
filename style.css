@@ -8,6 +8,10 @@
     font-family: 'Rubik Mono One', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 /*NAVIGATION*/
 
@@ -40,21 +44,41 @@ li{
     border-radius: 50%;
     text-align: center;
     font-weight: 800;
+    box-shadow: 0 5px 6px rgba(0,0,0,0.8);
     
 
 }
+
+.navigation ul li  a:hover{
+
+    box-shadow: 0 5px 6px rgba(0,0,0,0.2);
+    
+
+}
+
 
 
 /*SECTION*/
 
 section{
     position: relative;
+    height: 100vh;
 }
 
+section img{
+    max-width: 100%;
+    max-height: 50vh;
+}
 
+img{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+}
 
 .first-section{
-    height: 100vh;
     background-color: red;
 }
 
@@ -70,16 +94,6 @@ section{
     background-color: yellow;
 }
 
-
-
-img{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-    
-}
 
 div{
     position: absolute;
